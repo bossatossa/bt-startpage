@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="img-div">
+      <img id="card-image" />
+    </div>
+
+    <div class="the-grid">
+      <div class="grid-element">
+        🗞️ - News<br />
+        <a href="https://www.rtp.pt/noticias/">RTP</a><br />
+        <a href="https://shifter.pt/">Shifter</a><br />
+        <a href="https://news.ycombinator.com/">Hacker News</a><br />
+        <a href="https://slashdot.org/">Slashdot</a><br />
+        <a href="https://www.bloomberg.com/">Bloomberg</a><br />
+      </div>
+      <div class="grid-element">
+        📚 - Stuff to Read<br />  
+        <a href="https://z-lib.org/">Z Library</a><br />
+        <a href="https://sci-hub.se/">SciHub</a><br />
+        <a href="https://mangadex.org/">Mangadex</a><br />
+        <a href="https://www.webtoons.com/en">Webtoon</a><br />
+        <a href="https://dynasty-scans.com/">Dynasty Scans</a><br />
+        <br />
+      </div>
+      <div class="grid-element">
+        📮 - Mailboxes<br />
+        <a href="https://gmail.com/">Gmail</a><br />
+        <a href="https://mail.disroot.org/">Disroot Mail</a><br />
+        <a href="https://outlook.office365.com/">Outlook</a><br />
+      </div>
+
+      <div class="grid-element">
+        📺 - Stuff to Watch<br />
+        <a href="https://www.rtp.pt/play/">RTP Play</a><br />
+        <a href="https://pt.euronews.com/live">Euronews</a><br />
+        <a href="https://yewtu.be/">YewTube</a><br />
+        <a href="https://ihavenotv.com/">I Have no tv</a><br />
+        <a href="https://animekisa.tv/">AnimeKisa</a><br />
+      </div>
+      <div class="grid-element">
+        📻 - Radio<br />
+        <a href="https://www.rtp.pt/play/direto/antena1">Antena 1</a><br />
+        <a href="https://www.francemusique.fr/">France Musique</a><br />
+        <a href="http://www.beachfm.co.jp/radio/">Shonan Beach FM</a><br />
+        <a href="https://www.animu.com.br/">Animu</a><br />
+        <a href="https://r-a-d.io/">r/a/dio</a><br />
+      </div>
+      <div class="grid-element">
+        🎲 - Games<br />
+        <a href="https://store.steampowered.com/">Steam</a><br />
+        <a href="https://www.gog.com/">GOG</a><br />
+        <a href="https://online-go.com/">OGS</a><br />
+        <a href="https://lishogi.org/">Lishogi</a><br />
+        <a href="https://lichess.org/">Lichess</a><br />
+      </div>
+      <div class="grid-element">
+        🛠️ - Dev Stuff<br />
+        <a href="https://github.com/">Github</a><br />
+        <a href="https://www.gitlab.com/">Gitlab</a><br />
+        <a href="https://dev.to/">Dev.to</a><br />
+        <a href="https://www.w3schools.com/">w3schools</a><br />
+        <a href="https://learnxinyminutes.com/">learnxinyminutes.com</a><br />
+      </div>
+      <div class="grid-element">
+        ⭕ - Misc...<br />  
+        <a href="https://www.ipma.pt/pt/index.html">IPMA</a><br />
+        <a href="https://archive.org/">archive.org</a><br />
+        <a href="https://short-wave.info/">Shortwave Info</a><br />
+        <a href="https://www.pouet.net/">pouet</a><br />
+        <a href="http://n-gate.com/">n-gate</a><br />
+      </div>
+    </div>
+  </body>
+  <script>
+    var imgid = Math.floor(Math.random() * 10);
+    var filename = imgid + ".png";
+    document.querySelector("#card-image").src = "img/" + filename;
+  </script>
+</html>
